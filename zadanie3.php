@@ -4,6 +4,11 @@
     $passwd='';
     $dbname='praktyki';
 
-    $dbh = new PDO('mysql:host='$host';dbname='$dbname, $user, $passwd);
+
+    try {
+        $con = new PDO('mysql:host='$host';dbname='$dbname, $user, $passwd);
+    } catch (PDOException $e) {
+        echo "Error!: " . $e->getMessage() . "<br/>";
+    }
     
 ?>
