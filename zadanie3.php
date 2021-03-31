@@ -1,12 +1,8 @@
 <?php
-    $host='localhost';
     $user='root';
     $passwd='';
-    $dbname='praktyki';
-
-
     try {
-        $con = new PDO('mysql:host='$host';dbname='$dbname, $user, $passwd);
+        $con = new PDO('mysql:host=localhost;dbname=praktyki', $user, $passwd);
     } catch (PDOException $e) {
         echo "Error!: " . $e->getMessage() . "<br/>";
     }
