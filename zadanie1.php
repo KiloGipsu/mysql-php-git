@@ -4,4 +4,7 @@
     $passwd='';
     $dbname='praktyki';
 
+    $con = mysqli_connect($host,$user,$passwd,$dbname);
+
+
 ?>
